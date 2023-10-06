@@ -2,11 +2,11 @@ package comparator;
 
 import java.util.Comparator;
 
-// Compara a maior nota de cada estudante
+// Ordenação pela primeira nota a título de exemplo
 public class NotasComparator implements Comparator<Estudante> {
     @Override
     public int compare(Estudante estudante1, Estudante estudante2) {
-        return Double.compare(estudante1.getMaiorNota(), estudante2.getMaiorNota());
+        return Double.compare(estudante1.getNotas()[0], estudante2.getNotas()[0]);
     }
 }
 

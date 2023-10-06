@@ -67,7 +67,4 @@ public class Estudante {
                 Arrays.toString(notas) + "\nMedia: " +this.calcularMedia();
     }
 
-    public double getMaiorNota() {
-        return Arrays.stream(notas).max().orElse(0.0);
-    }
 }
