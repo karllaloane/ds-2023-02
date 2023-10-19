@@ -25,9 +25,8 @@ public class Csv {
 
                 String[] columns = linha.split(",");
 
-
                 if (columns.length >= 2) {
-                    // Parse as duas primeiras colunas para números
+                    
                     double num1 = Double.parseDouble(columns[0]);
                     double num2 = Double.parseDouble(columns[1]);
 
