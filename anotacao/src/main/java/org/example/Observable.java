@@ -1,6 +1,6 @@
 package org.example;
 
 public interface Observable {
-    void addObserver(Object observer);
+    void addObserver(InterfaceObserver observer);
     void notificar();
 }

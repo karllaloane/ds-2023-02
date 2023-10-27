@@ -3,31 +3,37 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        //USANDO CLASSES ANÔNIMAS
-
         ConcreteObservable concreteObservable = new ConcreteObservable("carro");
 
         @Observer(observado = "carro")
-        class CarroObserver {}
-
-        CarroObserver carroObserver = new CarroObserver();
+        class CarroObserver implements InterfaceObserver{
+            @Override
+            public void atualizar() {
+                System.out.println("Identificador carro");
+            }
+        }
 
         try{
-            concreteObservable.addObserver(carroObserver);
+            concreteObservable.addObserver(new CarroObserver());
         }  catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
 
-        @Observer(observado = "barco")
-        class BarcoObserver {}
+        concreteObservable.addObserverSemIdentificador(
+                () -> {
+                    System.out.println("Atualizar sem observador");
+                }
+        );
 
-        BarcoObserver barcoObserver = new BarcoObserver();
 
-        try{
-            concreteObservable.addObserver(barcoObserver);
-        }  catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }
+        // LAMBDA
+        teste(() -> {
+            System.out.println("Atualizar lambda");
+        });
 
+    }
+
+    static void teste(InterfaceObserver i){
+        i.atualizar();
     }
 }
