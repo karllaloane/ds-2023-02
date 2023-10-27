@@ -21,7 +21,7 @@ public class Main {
 
         concreteObservable.addObserverSemIdentificador(
                 () -> {
-                    System.out.println("Atualizar sem observador");
+                    System.out.println("Atualizar sem identificador");
                 }
         );
 
