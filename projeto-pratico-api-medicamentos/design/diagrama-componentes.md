@@ -6,7 +6,7 @@ A API REST é a camada que recebe e processa requisições externas. Contém a l
 
 A arquitetura apresentada no diagrama segue um padrão de desenvolvimento de software conhecido como arquitetura em camadas, onde as responsabilidades são divididas em camadas distintas. 
 
-![image](https://github.com/karllaloane/ds-2023-02/assets/108896016/7f479b90-85a4-4c2f-a391-1abe502d9240)
+![image](https://github.com/karllaloane/ds-2023-02/assets/108896016/470ab36d-3f5f-4d7c-af91-81440b4c37be)
 
 
 ## Componentes
