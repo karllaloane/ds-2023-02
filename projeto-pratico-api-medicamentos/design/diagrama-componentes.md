@@ -1,10 +1,13 @@
 # Diagrama de Componentes
 
-O diagrama de componentes representa a arquitetura de componentes de um sistema que utiliza uma API REST para interações com um serviço de busca baseado no Elasticsearch.
+O diagrama de componentes representa a arquitetura de componentes do sistema, utilizando uma API REST para interações com um serviço de busca baseado no Elasticsearch.
 
 A API REST é a camada que recebe e processa requisições externas. Contém a lógica para encaminhar requisições aos controladores e serviços apropriados.
 
 A arquitetura apresentada no diagrama segue um padrão de desenvolvimento de software conhecido como arquitetura em camadas, onde as responsabilidades são divididas em camadas distintas. 
+
+![image](https://github.com/karllaloane/ds-2023-02/assets/108896016/7f479b90-85a4-4c2f-a391-1abe502d9240)
+
 
 ## Componentes
 
